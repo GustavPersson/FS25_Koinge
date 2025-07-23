@@ -1,0 +1,47 @@
+{
+    "DEMSettings": {
+        "adjust_terrain_to_ground_level": true,
+        "multiplier": 1,
+        "minimum_height_scale": 255,
+        "plateau": 2,
+        "ceiling": 0,
+        "water_depth": 2,
+        "blur_radius": 35,
+        "add_foundations": false
+    },
+    "BackgroundSettings": {
+        "generate_background": true,
+        "generate_water": true,
+        "water_blurriness": 0,
+        "remove_center": true
+    },
+    "GRLESettings": {
+        "farmland_margin": 0,
+        "add_farmyards": true,
+        "base_price": 60000,
+        "price_scale": 100,
+        "add_grass": true,
+        "base_grass": "meadow",
+        "random_plants": false,
+        "fill_empty_farmlands": false
+    },
+    "I3DSettings": {
+        "add_trees": true,
+        "forest_density": 10,
+        "trees_relative_shift": 20,
+        "spline_density": 2,
+        "add_reversed_splines": false,
+        "field_splines": true
+    },
+    "TextureSettings": {
+        "dissolve": false,
+        "fields_padding": 1,
+        "skip_drains": false,
+        "use_cache": false,
+        "use_precise_tags": false
+    },
+    "SatelliteSettings": {
+        "download_images": true,
+        "zoom_level": 16
+    }
+}

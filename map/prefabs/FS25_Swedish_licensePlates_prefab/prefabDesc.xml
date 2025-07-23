@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<prefabDesc descVersion="1">
+<author>Scandinavian Vikings Mod-Rebuilds Team</author>
+<version>1.0.0.0</version>
+
+<title>
+<en>Swedish LicensePlates</en>
+<de>Schwedische Nummernschilder</de>
+<fr>Plaques D'immatriculation Suédoises</fr>
+<sv>Svenska Registreringsskyltar</sv>
+</title>
+
+<categories>
+    <category>prefab</category>
+</categories>
+
+<iconFilename>icon_prefab.dds</iconFilename>
+
+<description>
+<en>
+<![CDATA[This is not a mod! It is prefabricated (Prefab) game assets. 
+This Prefab will give your map Swedish version licenseplates and contains already prepared folders and assets for each original in-game map.
+To use it for your own created map use the prepared folders as a template and adjust the xml-files accordingly.
+
+Licenseplate design-configurations:
+- In-game vehicles will have Swedish elongated license plate, 3 letter, 3 numbers or 2 numbers/1 letter
+- In-game vehicles will have Swedish squarish license plate, 3 letter, 3 numbers or 2 numbers/1 letter
+- In-game vehicles will have Swedish squarish personalized license plate, 7 letter/numbers
+- ai-Vehicles will have Swedish squarish small (USA version) license plates, 3 letter, 3 numbers
+
+Before downloading, please understand that this is NOT a ready to install mod, it is a Prefab that contains modified game assets for 
+modders to add the assets to their maps and is not intended for end-users to manipulate original game files!]]>
+</en>
+<de>
+<![CDATA[Dies ist keine Mod! Es handelt sich um vorgefertigte (Prefab) Spiel-Assets. 
+Diese Prefab gibt deiner Karte schwedische Versionslizenzschilder und enthält bereits vorbereitete Ordner und Assets für jede originale Karte im Spiel.
+Um es für deine selbst erstellte Karte zu verwenden, benutze die vorbereiteten Ordner als Vorlage und passe die xml-Dateien entsprechend an.
+
+Nummernschild-Design-Konfigurationen:
+- Fahrzeuge im Spiel haben ein längliches schwedisches Nummernschild mit 3 Buchstaben, 3 Zahlen oder 2 Zahlen/1 Buchstabe
+- Fahrzeuge im Spiel haben ein schwedisches quadratisches Nummernschild, 3 Buchstaben, 3 Zahlen oder 2 Zahlen/1 Buchstabe
+- Ingame-Fahrzeuge haben ein schwedisches, quadratisches, personalisiertes Nummernschild, 7 Buchstaben/Zahlen
+- ai-Fahrzeuge haben schwedische quadratische kleine (USA-Version) Nummernschilder mit 3 Buchstaben und 3 Zahlen
+
+Vor dem Herunterladen ist zu beachten, dass es sich hierbei NICHT um eine fertige Mod handelt, sondern um eine Prefab, die modifizierte Spiel-Assets enthält, die 
+die Modder in ihre Karten einbauen können, und ist nicht dafür gedacht, dass Endbenutzer die Originaldateien des Spiels manipulieren!]]>
+</de>
+<fr>
+<![CDATA[Dies ist keine Mod! Es handelt sich um vorgefertigte (Prefab) Spiel-Assets. 
+Diese Prefab gibt deiner Karte schwedische Versionslizenzschilder und enthält bereits vorbereitete Ordner und Assets für jede originale Karte im Spiel.
+Um es für deine selbst erstellte Karte zu verwenden, benutze die vorbereiteten Ordner als Vorlage und passe die xml-Dateien entsprechend an.
+
+Nummernschild-Design-Konfigurationen:
+- Fahrzeuge im Spiel haben ein längliches schwedisches Nummernschild mit 3 Buchstaben, 3 Zahlen oder 2 Zahlen/1 Buchstabe
+- Fahrzeuge im Spiel haben ein schwedisches quadratisches Nummernschild, 3 Buchstaben, 3 Zahlen oder 2 Zahlen/1 Buchstabe
+- Ingame-Fahrzeuge haben ein schwedisches, quadratisches, personalisiertes Nummernschild, 7 Buchstaben/Zahlen
+- ai-Fahrzeuge haben schwedische quadratische kleine (USA-Version) Nummernschilder mit 3 Buchstaben und 3 Zahlen
+
+Vor dem Herunterladen ist zu beachten, dass es sich hierbei NICHT um eine fertige Mod handelt, sondern um eine Prefab, die modifizierte Spiel-Assets enthält, die 
+die Modder in ihre Karten einbauen können, und ist nicht dafür gedacht, dass Endbenutzer die Originaldateien des Spiels manipulieren!]]>
+</fr>
+</description>
+	
+</prefabDesc>

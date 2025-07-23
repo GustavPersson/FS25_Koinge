@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeables version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/savegame_placeables.xsd">
+    <placeable filename="data/placeables/mapEU/brandless/buildings/farmSheds/farmShed03.xml" uniqueId="placeable8d32469e64615c414715a762714008c9" position="1120.743 64.342 -1240.944" rotation="0.00 3.43 0.00" age="0.000000" price="15000.000000" >
+        <configuration name="solarPanels" id="1" isActive="true"/>
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+    </placeable>
+    <placeable filename="data/placeables/rudolfHormann/garageBigStorageService/garageBigStorageService.xml" uniqueId="placeable4b4a3e5cc86c1ba25a67329fde03e7a6" position="1123.000 62.323 -1285.000" rotation="-0.00 90.00 0.00" age="0.000000" price="348000.000000" >
+        <configuration name="color" id="1" isActive="true"/>
+        <configuration name="solarPanels" id="1" isActive="true"/>
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+    </placeable>
+    <placeable filename="data/placeables/mapEU/brandless/buildings/farmBuildings/farmBuilding02/farmBuilding02.xml" uniqueId="placeable3b7b6ab64d07543ac4a03ff1403b35b7" position="1080.750 62.432 -1237.250" rotation="0.00 -0.00 0.00" age="0.000000" price="175000.000000" >
+        <farmhouse isFreeForAll="false"/>
+        <wardrobe isFreeForAll="false"/>
+    </placeable>
+    <placeable modName="FS25_FencelessPastures" filename="$moddir$FS25_FencelessPastures/xml/caprines00.xml" uniqueId="placeable4d2fff07a6f73074d146866620aeacf3" position="1149.750 64.965 -1227.750" rotation="-180.00 -0.00 -180.00" age="0.000000" price="4000.000000" >
+        <husbandry globalProductionFactor="0.000000" productionFactor="0.000000"/>
+        <husbandryFence>
+            <fence>
+                <segment start="1142.750 64.965 -1227.109" end="1134.702 64.830 -1227.908" id="SEGMENT"/>
+                <segment start="1134.702 64.830 -1227.908" end="1132.842 64.324 -1247.533" id="SEGMENT"/>
+                <segment start="1132.842 64.324 -1247.533" end="1163.168 64.816 -1248.666" id="SEGMENT"/>
+                <segment start="1163.168 64.816 -1248.666" end="1153.750 64.965 -1227.109" id="SEGMENT"/>
+            </fence>
+        </husbandryFence>
+        <husbandryMeadow>
+            <fillType name="GRASS_WINDROW" fillLevel="0.000000" capacity="2298.619873"/>
+        </husbandryMeadow>
+    </placeable>
+    <placeable filename="data/placeables/rudolfHormann/cowBarnMedium/cowBarnMedium.xml" uniqueId="placeable598440eb32dcc43f640a1221f2496268" position="1080.750 61.981 -1328.500" rotation="-180.00 -0.00 -180.00" age="0.000000" price="254000.000000">
+        <configuration name="color" id="1" isActive="true"/>
+        <configuration name="solarPanels" id="1" isActive="true"/>
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+        <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
+            <storage/>
+        </husbandry>
+        <husbandryFence>
+            <fence>
+                <segment start="1092.879 62.071 -1315.322" end="1092.879 62.000 -1295.322" id="SEGMENT"/>
+                <segment start="1092.879 62.071 -1295.322" end="1068.879 61.964 -1295.322" id="SEGMENT"/>
+                <segment start="1068.879 62.071 -1295.322" end="1068.879 61.981 -1317.322" id="SEGMENT"/>
+            </fence>
+        </husbandryFence>
+        <husbandryMeadow>
+            <fillType name="GRASS_WINDROW" fillLevel="0.000000" capacity="2312.822510"/>
+        </husbandryMeadow>
+    </placeable>
+    <placeable filename="data/placeables/brandless/liquidManureTanks/baseTank/baseTank.xml" uniqueId="placeableff1666848872ce86277693cad79694a2" position="1044.59448242 62.23867035 -1289.60375977" rotation="177.58900452 75.7971344 176.51066589">
+        <silo>
+            <storage index="1" />
+        </silo>
+    </placeable>
+</placeables>

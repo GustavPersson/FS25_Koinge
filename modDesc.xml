@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="92" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
+    <author>Gunken</author>
+    <version>0.0.1.0</version>
+    <title>
+        <en>Köinge</en>
+    </title>
+
+    <description>
+        <en>Köinge - Sweden</en>
+        <de>Köinge - Schweden</de>
+    </description>
+
+    <iconFilename>preview.png</iconFilename>
+
+    <multiplayer supported="true"/>
+	<changeModTitle modTitle="Köinge"/>
+
+    <maps>
+        <map id="Koinge" configFilename="map/map.xml" defaultVehiclesXMLFilename="map/config/vehicles.xml" defaultPlaceablesXMLFilename="map/config/placeables.xml" defaultHandToolsXMLFilename="map/config/handTools.xml" defaultItemsXMLFilename="map/config/items.xml">
+            <title>
+                <en>Köinge, Skåne</en>
+            </title>
+            <description>
+                <en>Mittskåne</en>
+            </description>
+            <iconFilename>preview.png</iconFilename>
+        </map>
+    </maps>
+	
+    	<brands>
+		<!-- 
+		<brand name="LANTMÄNNEN" title="LANTMÄNNEN" image="store/lantmannen.dds"
+        
+        <brand name="PAULANER" title="PAULANER" image="store/brand_paulaner.dds"/>
+        <brand name="LSFMINNOVATIONS" title="LSFM" image="store/brand_lsfmInnovations.dds"/>
+		<brand name="LSFMBIOTECH" title="LSFMBIOTECH" image="store/brand_lsfmbiotech.dds"/>
+		<brand name="NISSAN" title="NISSAN" image="store/brand_nissan.dds"/>
+		<brand name="BELLANDRIS" title="BELLANDRIS" image="store/brand_bellandris.dds"/>
+		<brand name="WHISKAS" title="WHISKAS" image="store/brand_whiskas.dds"/>
+		<brand name="RYGOL" title="RYGOL" image="store/brand_rygol.dds"/>
+		<brand name="FELS" title="FELS COMPANY" image="store/brand_fels.dds"/>
+		<brand name="SPERMIX" title="SPERMIX" image="store/brand_spermix.dds"/>
+		<brand name="COMPO" title="COMPO" image="store/brand_compo.dds"/>
+		 -->
+    </brands>
+	
+	<dependencies>
+        <dependency>FS25_FencelessPastures</dependency> 
+<!--         
+        <dependency>FS25_lsfmBaleStorage</dependency>
+        <dependency>FS25_lsfmUniversalTankPack</dependency>
+        <dependency>FS25_lsfmBigBagPack</dependency>
+        <dependency>FS25_lsfmFarmEquipmentPack</dependency>
+		<dependency>FS25_lsfmLivestockTrailerLST85</dependency>
+		<dependency>FS25_meridianTL1239AL</dependency>
+		<dependency>FS25_flieglRearDeck</dependency>
+		<dependency>FS25_compostLoader</dependency> -->
+	</dependencies>
+
+
+    <storeItems>
+        <storeItem xmlFilename="$data/placeables/brandless/liquidManureTanks/baseTank/baseTank.xml" />
+        <storeItem xmlFilename="$data/placeables/rudolfHormann/cowBarnMedium/cowBarnMedium.xml" />
+        <storeItem xmlFilename="$data/placeables/rudolfHormann/garageBigStorageService/garageBigStorageService.xml" />
+        <storeItem xmlFilename="$data/placeables/mapEU/brandless/buildings/farmSheds/farmShed03.xml" />
+        <storeItem xmlFilename="$data/placeables/mapEU/brandless/buildings/farmBuildings/farmBuilding02/farmBuilding02.xml" />
+        <storeItem xmlFilename="$moddir$FS25_FencelessPastures/xml/caprines00.xml" />
+    </storeItems>
+    <!--
+        <storeItem xmlFilename="dc401.xml"/>
+    -->
+</modDesc>

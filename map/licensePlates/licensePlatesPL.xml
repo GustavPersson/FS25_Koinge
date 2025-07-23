@@ -1,0 +1,93 @@
+<licensePlates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/mapLicensePlates.xsd">
+    <font name="LICENSE_PLATE_PL" />
+
+    <licensePlate filename="$data/maps/mapEU/licensePlates/licensePlatesSV.i3d" node="0" type="ELONGATED" width="0.52" height="0.11">
+        <font size="0.075" scaleX="0.85" scaleY="1"/>
+
+        <variations>
+            <variation> <!-- Swedish DMV regulated issue elongated license plate, 3 letter, 3 numbers or 2 numbers/1 letter -->
+                <value node="0|0" posX="-0.1712" numerical="false" alphabetical="true" />
+                <value node="0|1" posX="-0.1172" numerical="false" alphabetical="true" />
+                <value node="0|2" posX="-0.0632" numerical="false" alphabetical="true" />
+
+                <value node="0|4" posX="0.1090"  numerical="true"  alphabetical="false" nextSection="true"/>
+                <value node="0|5" posX="0.1630"  numerical="true"  alphabetical="false" />
+                <value node="0|6" posX="0.2170"  numerical="true"  alphabetical="true" />
+
+                <value node="0|9"  position="ANY"/>
+                <value node="0|10" position="ANY"/>
+
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="0.0123 0.1413 0.5776"/>
+                </material>
+            </variation>
+
+            <variation> <!-- Swedish DMV regulated issue elongated personalized license plate, 7 letter/numbers -->
+                <value node="0|1" posX="-0.162" numerical="true" alphabetical="true" special="true"/>
+                <value node="0|2" posX="-0.108" numerical="true" alphabetical="true" special="true"/>
+                <value node="0|3" posX="-0.054" numerical="true" alphabetical="true" special="true"/>
+                <value node="0|4" posX="0.000"  numerical="true" alphabetical="true" special="true"/>
+                <value node="0|5" posX="0.054"  numerical="true" alphabetical="true" special="true"/>
+                <value node="0|6" posX="0.108"  numerical="true" alphabetical="true" special="true"/>
+                <value node="0|7" posX="0.162"  numerical="true" alphabetical="true" special="true"/>
+
+                <value node="0|9"  position="ANY"/>
+                <value node="0|10" position="ANY"/>
+
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="0.0123 0.1413 0.5776"/>
+                </material>
+            </variation>
+        </variations>
+
+        <frame node="2" widthOffset="0.005" heightOffsetTop="0.005" heightOffsetBot="0.015"/>
+    </licensePlate>
+
+    <licensePlate filename="$data/maps/mapEU/licensePlates/licensePlatesSV.i3d" node="1" type="SQUARISH" width="0.255" height="0.130">
+        <font size="0.05" scaleX="0.95" scaleY="1"/>
+
+        <variations>
+            <variation> <!-- Swedish DMV regulated issue squarish license plate, 3 letter, 3 numbers or 2 number/1 letter -->
+                <value node="0|0" posX="-0.0336" posY="0.03" numerical="false" alphabetical="true" />
+                <value node="0|1" posX="0.0069"  posY="0.03" numerical="false" alphabetical="true" />
+                <value node="0|2" posX="0.0476"  posY="0.03" numerical="false" alphabetical="true" />
+
+                <value node="0|3" posX="-0.0336" numerical="true" alphabetical="false" nextSection="true"/>
+                <value node="0|4" posX="0.0069"  numerical="true" alphabetical="false" />
+                <value node="0|5" posX="0.0476"  numerical="true" alphabetical="true" />
+
+                <value node="0|9"  position="ANY"/>
+                <value node="0|10" position="ANY"/>
+
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="0.0123 0.1413 0.5776"/>
+                </material>
+            </variation>
+            <variation> <!-- Swedish DMV regulated issue squarish personalized license plate, 6 letter, 4 numbers/4 letters -->
+                <value node="0|1" posX="-0.0194" posY="0.03" numerical="true" alphabetical="true" special="true"/>
+                <value node="0|2" posX="0.0216"  posY="0.03" numerical="true" alphabetical="true" special="true"/>
+                <value node="0|3" posX="0.0622"  posY="0.03" numerical="true" alphabetical="true" special="true"/>
+				
+                <value node="0|5" posX="-0.0405"             numerical="true" alphabetical="true" special="true"/>
+                <value node="0|6" posX="0.0001"              numerical="true" alphabetical="true" special="true"/>
+                <value node="0|7" posX="0.0407"              numerical="true" alphabetical="true" special="true"/>
+                <value node="0|8" posX="0.0822"              numerical="true" alphabetical="true" special="true"/>
+				
+                <value node="0|9"  position="ANY"/>
+                <value node="0|10" position="ANY"/>
+
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="0.0123 0.1413 0.5776"/>
+                </material>
+            </variation>
+        </variations>
+
+        <frame node="2" widthOffset="0.005" heightOffsetTop="0.005" heightOffsetBot="0.015"/>
+    </licensePlate>
+
+    <colorConfigurations materialName="licensePlateColored_mat" useDefaultColors="true">
+        <colorConfiguration name="$l10n_ui_colorBlack" color="0.0212 0.0212 0.0212"/>
+    </colorConfigurations>
+
+    <placement defaultType="both"/>
+</licensePlates>

@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<precisionFarming>
+    <coverMap lockChannel="0" firstChannel="1" numChannels="4" maxValue="7"/>
+
+    <soilMap>
+        <bitVectorMap numChannels="3" typeFirstChannel="0" typeNumChannels="2" coverChannel="2"/>
+
+        <predefinedMaps>
+            <predefinedMap filename="soilMaps/mapFR.grle" mapIdentifier="mapFR"/>
+            <predefinedMap filename="soilMaps/mapUS.grle" mapIdentifier="mapUS"/>
+            <predefinedMap filename="soilMaps/mapAlpine.grle" mapIdentifier="mapAlpine"/>
+            <predefinedMap filename="soilMaps/mapSA.grle" mapIdentifier="mapSA"/>
+            <predefinedMap filename="soilMaps/mapEU.grle" mapIdentifier="mapEU"/>
+            <predefinedMap filename="soilMaps/mapAS.grle" mapIdentifier="mapAS"/>
+
+            <predefinedMap filename="soilMaps/generic.grle" isDefault="true"/>
+        </predefinedMaps>
+
+        <sampling name="$l10n_pa_sampledArea" sampledColor="0.1022 0.0168 0.0212" sampledColorBlind="0.0061 0.0061 0.0130" pricePerSample="50 100 150" analyseTimeSecPerSample="5">
+            <texts idleText="$l10n_ui_laboratory_idle" analyseText="$l10n_ui_laboratory_analyse"/>
+        </sampling>
+
+        <soilTypes>
+            <soilType name="$l10n_ui_soilType_1" yieldPotential="0.8"  color="1.0000 0.6376 0.0823" colorBlind="0.6172 0.6172 0.0263"/>
+            <soilType name="$l10n_ui_soilType_2" yieldPotential="1.0"  color="0.1946 0.3278 0.1812" colorBlind="0.0578 0.0578 0.2383"/>
+            <soilType name="$l10n_ui_soilType_3" yieldPotential="1.25" color="0.2541 0.2086 0.1686" colorBlind="0.2307 0.2307 0.2016"/>
+            <soilType name="$l10n_ui_soilType_4" yieldPotential="0.9"  color="0.0000 0.0232 0.0320" colorBlind="0.0531 0.0531 0.0345"/>
+        </soilTypes>
+    </soilMap>
+
+    <yieldMap>
+        <bitVectorMap numChannels="5" sizeX="1024" sizeY="1024"/>
+
+        <yieldValues>
+            <yieldValue value="1"  displayValue="50"  color="0.9216 0.0003 0.0012" colorBlind="0.3467 0.1384 0.0296"/>
+            <yieldValue value="2"  displayValue="52.5"  />
+            <yieldValue value="3"  displayValue="55"  color="0.9911 0.0152 0.0000" colorBlind="0.4020 0.1912 0.0497"/>
+            <yieldValue value="4"  displayValue="57.5"  />
+            <yieldValue value="5"  displayValue="60"  color="0.9911 0.0529 0.0000" colorBlind="0.4793 0.2705 0.0823"/>
+            <yieldValue value="6"  displayValue="62.5"  />
+            <yieldValue value="7"  displayValue="65"  color="0.9911 0.0999 0.0000" colorBlind="0.5711 0.3813 0.1329"/>
+            <yieldValue value="8"  displayValue="67.5"  />
+            <yieldValue value="9"  displayValue="70"  color="0.9911 0.1714 0.0000" colorBlind="0.6514 0.4852 0.1845"/>
+            <yieldValue value="10" displayValue="72.5"  />
+            <yieldValue value="11" displayValue="75"  color="0.9911 0.2664 0.0000" colorBlind="0.7835 0.6445 0.3278"/>
+            <yieldValue value="12" displayValue="77.5"  />
+            <yieldValue value="13" displayValue="80"  color="1.0000 0.4125 0.0000" colorBlind="1.0000 0.8963 0.7231"/>
+            <yieldValue value="14" displayValue="82.5"  />
+            <yieldValue value="15" displayValue="85"  color="1.0000 0.5457 0.0000" colorBlind="1.0000 1.0000 1.0000"/>
+            <yieldValue value="16" displayValue="87.5"  />
+            <yieldValue value="17" displayValue="90"  color="0.7758 0.5395 0.0021" colorBlind="0.7605 0.9301 0.9559"/>
+            <yieldValue value="18" displayValue="92.5"  />
+            <yieldValue value="19" displayValue="95"  color="0.5089 0.5089 0.0056" colorBlind="0.3763 0.6795 0.6307"/>
+            <yieldValue value="20" displayValue="97.5"  />
+            <yieldValue value="21" displayValue="100" color="0.3278 0.4969 0.0110" colorBlind="0.2270 0.5395 0.4675"/>
+            <yieldValue value="22" displayValue="102.5" />
+            <yieldValue value="23" displayValue="105" color="0.1878 0.4793 0.0242" colorBlind="0.1714 0.4564 0.3916"/>
+            <yieldValue value="24" displayValue="107.5" />
+            <yieldValue value="25" displayValue="110" color="0.0931 0.4793 0.0382" colorBlind="0.1144 0.3712 0.3050"/>
+            <yieldValue value="26" displayValue="112.5" />
+            <yieldValue value="27" displayValue="115" color="0.0319 0.4621 0.0529" colorBlind="0.0742 0.2961 0.2307"/>
+            <yieldValue value="28" displayValue="117.5" />
+            <yieldValue value="29" displayValue="120" color="0.0048 0.3419 0.0723" colorBlind="0.0482 0.2384 0.1812"/>
+            <yieldValue value="30" displayValue="122.5" />
+            <yieldValue value="31" displayValue="125" color="0.0048 0.2619 0.1223" colorBlind="0.0282 0.1884 0.1312"/>
+        </yieldValues>
+    </yieldMap>
+
+    <pHMap>
+        <bitVectorMap firstChannel="0" numChannels="5" />
+
+        <noiseMap numChannels="2" filename="soilMaps/ph_noise.grle"/>
+        <texts outdatedLabel="$l10n_ui_outdatedData"/>
+
+        <pHValues pHValuePerState="0.125">
+            <!-- value 0 -> no value yet -->
+            <pHValue value="1"  realValue="4.500" color="0.8631 0.0307 0.0185" colorBlind="0.3467 0.1384 0.0296"/>
+            <pHValue value="2"  realValue="4.625" showOnHud="false"/>
+            <pHValue value="3"  realValue="4.750" color="0.8879 0.0976 0.0194" colorBlind="0.4020 0.1912 0.0497"/>
+            <pHValue value="4"  realValue="4.875" showOnHud="false"/>
+
+            <pHValue value="5"  realValue="5.000" color="0.9131 0.2159 0.0144" colorBlind="0.4793 0.2705 0.0823"/>
+            <pHValue value="6"  realValue="5.125" showOnHud="false"/>
+            <pHValue value="7"  realValue="5.250" color="0.9647 0.3916 0.0103" colorBlind="0.5711 0.3813 0.1329"/>
+            <pHValue value="8"  realValue="5.375" showOnHud="false"/>
+            <pHValue value="9"  realValue="5.500" color="0.9647 0.6796 0.0021" colorBlind="0.6514 0.4852 0.1845"/>
+            <pHValue value="10" realValue="5.625" showOnHud="false"/>
+            <pHValue value="11" realValue="5.750" color="0.8713 0.8148 0.0123" colorBlind="0.7835 0.6445 0.3278"/>
+            <pHValue value="12" realValue="5.875" showOnHud="false"/>
+
+            <pHValue value="13" realValue="6.000" color="0.6514 0.7304 0.0212" colorBlind="1.0000 0.8963 0.7231"/>
+            <pHValue value="14" realValue="6.125" showOnHud="false"/>
+            <pHValue value="15" realValue="6.250" color="0.4114 0.6304 0.0352" colorBlind="1.0000 1.0000 1.0000"/>
+            <pHValue value="16" realValue="6.375" showOnHud="false"/>
+            <pHValue value="17" realValue="6.500" color="0.2159 0.5457 0.0545" colorBlind="0.7605 0.9301 0.9559"/>
+            <pHValue value="18" realValue="6.625" showOnHud="false"/>
+            <pHValue value="19" realValue="6.750" color="0.1361 0.5210 0.1378" colorBlind="0.3763 0.6795 0.6307"/>
+            <pHValue value="20" realValue="6.875" showOnHud="false"/>
+
+            <pHValue value="21" realValue="7.000" color="0.0561 0.4910 0.1878" colorBlind="0.2270 0.5395 0.4675"/>
+            <pHValue value="22" realValue="7.125" showOnHud="false"/>
+            <pHValue value="23" realValue="7.250" color="0.0037 0.3916 0.6867" colorBlind="0.1714 0.4564 0.3916"/>
+            <pHValue value="24" realValue="7.375" showOnHud="false"/>
+            <pHValue value="25" realValue="7.500" color="0.0382 0.1878 0.5029" colorBlind="0.0742 0.2961 0.2307"/>
+            <pHValue value="26" realValue="7.625" showOnHud="false"/>
+            <pHValue value="27" realValue="7.750" showOnHud="false"/>
+            <pHValue value="28" realValue="7.875" showOnHud="false"/>
+
+            <pHValue value="29" realValue="8.000" color="0.0409 0.0886 0.3763" colorBlind="0.0482 0.2384 0.1812"/>
+            <pHValue value="30" realValue="8.125" showOnHud="false"/>
+            <pHValue value="31" realValue="8.250" showOnHud="false"/>
+        </pHValues>
+
+        <valueTransformations regularUsage="3285">
+            <valueTransformation soilTypeIndex="1">
+                <baseValue range="9 10 11 12"/> <!-- 5.0 6.5 -->
+                <optimalValue value="13"/>
+                <decreasePerHarvest value="1"/>
+                <regularOffset value="1.5"/>
+            </valueTransformation>
+            <valueTransformation soilTypeIndex="2">
+                <baseValue range="13 14 15 16"/>  <!-- 5.5 7.0 -->
+                <optimalValue value="17"/>
+                <decreasePerHarvest value="1"/>
+                <regularOffset value="1.5"/>
+            </valueTransformation>
+            <valueTransformation soilTypeIndex="3">
+                <baseValue range="12 13 14 15"/>  <!-- 6.0 7.5 -->
+                <optimalValue value="19"/>
+                <decreasePerHarvest value="2"/>
+                <regularOffset value="0.5"/>
+            </valueTransformation>
+            <valueTransformation soilTypeIndex="4">
+                <baseValue range="14 15 16 17"/> <!-- 6.0 8.0 -->
+                <optimalValue value="21"/>
+                <decreasePerHarvest value="2"/>
+                <regularOffset value="0.5"/>
+            </valueTransformation>
+        </valueTransformations>
+
+        <!--
+
+        regular reference
+            - average pH decrease per harvest is 0.1875
+            - after three harvest: 0.5625
+            - required lime amount = 3285 kg/ha
+
+        Regular Offset:
+            - while regular putting 3285kg lime on the field the pH will increase 0.5625 every three harvests
+            - this means 50% too high for the first two soil types
+            - and 50% too low for the last two soil types
+            - but in average the pH is fine
+
+        Basegame Usage:
+            - 3240 l/ha
+            - 3888 kg/ha
+            - pH +0.555 (700kg / pH +0.1)
+
+        -->
+
+        <limeUsage usagePerState="730"/> <!-- 875kg/ha to increase pH by 0.125 -> 730 l/ha (1.2 kg/l) -->
+
+        <yieldMappings>
+            <yieldMapping levelDifference="-20" yieldFactor="0.0"/>
+            <yieldMapping levelDifference="-19" yieldFactor="0.0"/>
+            <yieldMapping levelDifference="-18" yieldFactor="0.0"/>
+            <yieldMapping levelDifference="-17" yieldFactor="0.0"/>
+            <yieldMapping levelDifference="-16" yieldFactor="0.0"/>
+            <yieldMapping levelDifference="-15" yieldFactor="0.0"/>
+            <yieldMapping levelDifference="-14" yieldFactor="0.0"/>
+            <yieldMapping levelDifference="-13" yieldFactor="0.0"/>
+            <yieldMapping levelDifference="-12" yieldFactor="0.0"/>
+            <yieldMapping levelDifference="-11" yieldFactor="0.0"/>
+            <yieldMapping levelDifference="-10" yieldFactor="0.0"/>
+            <yieldMapping levelDifference="-9" yieldFactor="0.00"/>
+            <yieldMapping levelDifference="-8" yieldFactor="0.00"/>
+            <yieldMapping levelDifference="-7" yieldFactor="0.20"/>
+            <yieldMapping levelDifference="-6" yieldFactor="0.40"/>
+            <yieldMapping levelDifference="-5" yieldFactor="0.60"/>
+            <yieldMapping levelDifference="-4" yieldFactor="0.80"/>
+            <yieldMapping levelDifference="-3" yieldFactor="0.90"/>
+            <yieldMapping levelDifference="-2" yieldFactor="0.95"/>
+            <yieldMapping levelDifference="-1" yieldFactor="0.975"/>
+
+            <yieldMapping levelDifference="0" yieldFactor="1"/>
+
+            <yieldMapping levelDifference="1"  yieldFactor="0.975"/>
+            <yieldMapping levelDifference="2"  yieldFactor="0.950"/>
+            <yieldMapping levelDifference="3"  yieldFactor="0.925"/>
+            <yieldMapping levelDifference="5"  yieldFactor="0.875"/>
+            <yieldMapping levelDifference="6"  yieldFactor="0.800"/>
+            <yieldMapping levelDifference="7"  yieldFactor="0.600"/>
+            <yieldMapping levelDifference="8"  yieldFactor="0.400"/>
+            <yieldMapping levelDifference="9"  yieldFactor="0.200"/>
+            <yieldMapping levelDifference="10" yieldFactor="0.000"/>
+        </yieldMappings>
+
+        <levelDifferenceColors>
+            <levelDifferenceColor levelDifference="0" color="0.0000 0.4341 0.0802" colorBlind="1.0000 1.0000 0.1000" text="$l10n_fieldInfo_perfect"/>
+            <levelDifferenceColor levelDifference="1" color="0.0331 0.4564 0.0513" colorBlind="0.9250 0.9250 0.1000" text="$l10n_fieldInfo_good"/>
+            <levelDifferenceColor levelDifference="2" color="0.1329 0.4735 0.0296" colorBlind="0.8500 0.8500 0.1000" text="$l10n_fieldInfo_good"/>
+            <levelDifferenceColor levelDifference="3" color="0.3231 0.4969 0.0137" colorBlind="0.7500 0.7500 0.1000" text="$l10n_fieldInfo_ok"/>
+            <levelDifferenceColor levelDifference="4" color="0.6105 0.5149 0.0048" colorBlind="0.6500 0.6500 0.1000" text="$l10n_fieldInfo_ok"/>
+            <levelDifferenceColor levelDifference="5" color="0.9910 0.3231 0.0000" colorBlind="0.4500 0.4500 0.1000" text="$l10n_fieldInfo_bad" showWarning="true"/>
+            <levelDifferenceColor levelDifference="6" color="0.9911 0.0742 0.0000" colorBlind="0.2500 0.2500 0.1000" text="$l10n_fieldInfo_bad" showWarning="true"/>
+            <levelDifferenceColor levelDifference="7" color="0.9910 0.0000 0.0000" colorBlind="0.1000 0.1000 0.1000" text="$l10n_fieldInfo_bad" showWarning="true"/>
+        </levelDifferenceColors>
+    </pHMap>
+
+    <nitrogenMap>
+        <bitVectorMap firstChannel="0" numChannels="6" maxValue="45" />
+
+        <noiseMap numChannels="2" filename="soilMaps/ph_noise.grle"/>
+        <texts outdatedLabel="$l10n_ui_outdatedData"/>
+
+        <cropSensor fruitTypes="wheat barley canola oat maize sunflower soybean potato sugarBeet sorghum grass meadow carrot parsnip beetroot clover"/>
+
+        <choppedStraw increase="25"/>
+        <catchCrops increase="25"/>
+
+        <nitrogenValues amountPerState="5" defaultRate="100">
+            <nitrogenValue value="1"   realValue="0"   color="0.9910 0.0000 0.0000" colorBlind="0.3515 0.1441 0.0307"/>
+            <nitrogenValue value="2"   realValue="5"   showOnHud="false"/>
+            <nitrogenValue value="3"   realValue="10"  showOnHud="false"/>
+            <nitrogenValue value="4"   realValue="15"  showOnHud="false"/>
+            <nitrogenValue value="5"   realValue="20"  color="0.9910 0.0454 0.0000" colorBlind="0.4397 0.2307 0.0648"/>
+            <nitrogenValue value="6"   realValue="25"  showOnHud="false"/>
+            <nitrogenValue value="7"   realValue="30"  showOnHud="false"/>
+            <nitrogenValue value="8"   realValue="35"  showOnHud="false"/>
+            <nitrogenValue value="9"   realValue="40"  color="0.9911 0.1042 0.0000" colorBlind="0.5583 0.3663 0.1221"/>
+            <nitrogenValue value="10"  realValue="45"  showOnHud="false"/>
+            <nitrogenValue value="11"  realValue="50"  showOnHud="false"/>
+            <nitrogenValue value="12"  realValue="55"  showOnHud="false"/>
+            <nitrogenValue value="13"  realValue="60"  color="0.9910 0.1715 0.0000" colorBlind="0.6867 0.5210 0.2086"/>
+            <nitrogenValue value="14"  realValue="65"  showOnHud="false"/>
+            <nitrogenValue value="15"  realValue="70"  showOnHud="false"/>
+            <nitrogenValue value="16"  realValue="75"  showOnHud="false"/>
+            <nitrogenValue value="17"  realValue="80"  color="0.9910 0.3231 0.0000" colorBlind="0.9473 0.8148 0.5647"/>
+            <nitrogenValue value="18"  realValue="85"  showOnHud="false"/>
+            <nitrogenValue value="19"  realValue="90"  showOnHud="false"/>
+            <nitrogenValue value="20"  realValue="95"  showOnHud="false"/>
+            <nitrogenValue value="21"  realValue="100" color="1.0000 0.5333 0.0000" colorBlind="1.0000 1.0000 1.0000"/>
+            <nitrogenValue value="22"  realValue="105" showOnHud="false"/>
+            <nitrogenValue value="23"  realValue="110" showOnHud="false"/>
+            <nitrogenValue value="24"  realValue="115" showOnHud="false"/>
+            <nitrogenValue value="25"  realValue="120" color="0.6105 0.5149 0.0048" colorBlind="0.6105 0.8550 0.8632"/>
+            <nitrogenValue value="26"  realValue="125" showOnHud="false"/>
+            <nitrogenValue value="27"  realValue="130" showOnHud="false"/>
+            <nitrogenValue value="28"  realValue="135" showOnHud="false"/>
+            <nitrogenValue value="29"  realValue="140" color="0.3231 0.4969 0.0137" colorBlind="0.2502 0.5711 0.5029"/>
+            <nitrogenValue value="30"  realValue="145" showOnHud="false"/>
+            <nitrogenValue value="31"  realValue="150" showOnHud="false"/>
+            <nitrogenValue value="32"  realValue="155" showOnHud="false"/>
+            <nitrogenValue value="33"  realValue="160" color="0.1329 0.4735 0.0296" colorBlind="0.1590 0.4452 0.3763"/>
+            <nitrogenValue value="34"  realValue="165" showOnHud="false"/>
+            <nitrogenValue value="35"  realValue="170" showOnHud="false"/>
+            <nitrogenValue value="36"  realValue="175" showOnHud="false"/>
+            <nitrogenValue value="37"  realValue="180" color="0.0331 0.4564 0.0513" colorBlind="0.0931 0.3324 0.2664"/>
+            <nitrogenValue value="38"  realValue="185" showOnHud="false"/>
+            <nitrogenValue value="39"  realValue="190" showOnHud="false"/>
+            <nitrogenValue value="40"  realValue="195" showOnHud="false"/>
+            <nitrogenValue value="41"  realValue="200" color="0.0000 0.3441 0.0802" colorBlind="0.0497 0.2462 0.1845"/>
+            <nitrogenValue value="42"  realValue="205" showOnHud="false"/>
+            <nitrogenValue value="43"  realValue="210" showOnHud="false"/>
+            <nitrogenValue value="44"  realValue="215" showOnHud="false"/>
+            <nitrogenValue value="45"  realValue="220" color="0.0000 0.2441 0.1202" colorBlind="0.0297 0.1462 0.1145"/>
+        </nitrogenValues>
+
+        <initialValues sprayLevelBonus="70 140">
+            <initialValue soilTypeIndex="1" baseValueRange="5 15 25 30" />
+            <initialValue soilTypeIndex="2" baseValueRange="5 10 30 35" />
+            <initialValue soilTypeIndex="3" baseValueRange="10 20 30 40" />
+            <initialValue soilTypeIndex="4" baseValueRange="5 15 25 35" />
+        </initialValues>
+
+        <yieldMappings regularLevel="170">
+            <yieldMapping difference="-200" yieldFactor="0.00"/>
+            <yieldMapping difference="-180" yieldFactor="0.01"/>
+            <yieldMapping difference="-160" yieldFactor="0.05"/>
+            <yieldMapping difference="-140" yieldFactor="0.14"/>
+            <yieldMapping difference="-120" yieldFactor="0.26"/>
+            <yieldMapping difference="-100" yieldFactor="0.40"/>
+            <yieldMapping difference="-80"  yieldFactor="0.58"/>
+            <yieldMapping difference="-60"  yieldFactor="0.70"/>
+            <yieldMapping difference="-40"  yieldFactor="0.82"/>
+            <yieldMapping difference="-20"  yieldFactor="0.90"/>
+            <yieldMapping difference="-10"  yieldFactor="0.95"/>
+
+            <yieldMapping difference="0"    yieldFactor="1.00"/>
+
+            <yieldMapping difference="20"   yieldFactor="0.98"/>
+            <yieldMapping difference="40"   yieldFactor="0.96"/>
+            <yieldMapping difference="60"   yieldFactor="0.92"/>
+            <yieldMapping difference="80"   yieldFactor="0.89"/>
+            <yieldMapping difference="100"  yieldFactor="0.85"/>
+            <yieldMapping difference="120"  yieldFactor="0.82"/>
+            <yieldMapping difference="140"  yieldFactor="0.79"/>
+        </yieldMappings>
+
+        <fruitRequirements>
+            <fruitRequirement fruitTypeName="WHEAT">
+                <soil soilTypeIndex="1" targetLevel="140" reduction="140" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="180" reduction="160" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="200" reduction="180" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="160" reduction="160" yieldPotential="0.9"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="BARLEY">
+                <soil soilTypeIndex="1" targetLevel="120" reduction="100" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="140" reduction="120" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="180" reduction="160" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="120" reduction="100" yieldPotential="0.9"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="OAT">
+                <soil soilTypeIndex="1" targetLevel="80" reduction="60" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="100" reduction="80" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="140" reduction="120" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="100" reduction="80" yieldPotential="0.9"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="CANOLA">
+                <soil soilTypeIndex="1" targetLevel="140" reduction="140" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="180" reduction="160" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="200" reduction="180" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="160" reduction="160" yieldPotential="0.9"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="MAIZE">
+                <soil soilTypeIndex="1" targetLevel="120" reduction="80" reductionForage="100" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="160" reduction="120" reductionForage="140" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="200" reduction="150" reductionForage="180" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="180" reduction="110" reductionForage="140" yieldPotential="0.9"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="SORGHUM">
+                <soil soilTypeIndex="1" targetLevel="100" reduction="60" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="120" reduction="80" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="160" reduction="100" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="140" reduction="100" yieldPotential="0.9"/>
+            </fruitRequirement>
+            <!-- we assume 3 cuts of grass/meadow per year with a total requirement of ~180kg N/ha-->
+            <fruitRequirement fruitTypeName="GRASS" alwaysAllowFertilization="true" ignoreOverfertilization="true">
+                <soil soilTypeIndex="1" targetLevel="50" reduction="40" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="55" reduction="40" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="65" reduction="50" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="65" reduction="55" yieldPotential="0.9"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="MEADOW" alwaysAllowFertilization="true" ignoreOverfertilization="true" availableAsDefaultRate="false">
+                <soil soilTypeIndex="1" targetLevel="55" reduction="40" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="60" reduction="40" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="65" reduction="50" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="65" reduction="55" yieldPotential="0.9"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="SUNFLOWER">
+                <soil soilTypeIndex="1" targetLevel="60" reduction="30" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="80" reduction="50" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="120" reduction="70" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="80" reduction="50" yieldPotential="0.9"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="SOYBEAN" ignoreOverfertilization="true" alwaysAllowFertilization="true" availableAsDefaultRate="false">
+                <soil soilTypeIndex="1" targetLevel="0" reduction="0" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="0" reduction="0" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="0" reduction="0" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="0" reduction="0" yieldPotential="0.9"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="POTATO" ignoreOverfertilization="true">
+                <soil soilTypeIndex="1" targetLevel="100" reduction="80" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="120" reduction="100" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="160" reduction="120" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="140" reduction="120" yieldPotential="0.9"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="SUGARBEET" ignoreOverfertilization="true">
+                <soil soilTypeIndex="1" targetLevel="120" reduction="100" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="140" reduction="120" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="180" reduction="140" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="160" reduction="120" yieldPotential="0.9"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="CARROT" ignoreOverfertilization="true">
+                <soil soilTypeIndex="1" targetLevel="80" reduction="70" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="90" reduction="80" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="110" reduction="90" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="100" reduction="80" yieldPotential="0.9"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="PARSNIP" ignoreOverfertilization="true">
+                <soil soilTypeIndex="1" targetLevel="100" reduction="60" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="120" reduction="80" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="140" reduction="100" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="140" reduction="100" yieldPotential="0.9"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="BEETROOT" ignoreOverfertilization="true">
+                <soil soilTypeIndex="1" targetLevel="100" reduction="60" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="120" reduction="80" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="140" reduction="100" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="140" reduction="100" yieldPotential="0.9"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="COTTON">
+                <soil soilTypeIndex="1" targetLevel="80" reduction="60" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="100" reduction="60" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="120" reduction="100" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="100" reduction="80" yieldPotential="0.9"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="POPLAR" alwaysAllowFertilization="true" ignoreOverfertilization="true">
+                <soil soilTypeIndex="1" targetLevel="120" reduction="100" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="160" reduction="120" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="180" reduction="160" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="140" reduction="120" yieldPotential="0.9"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="SUGARCANE" alwaysAllowFertilization="true">
+                <soil soilTypeIndex="1" targetLevel="120" reduction="100" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="160" reduction="140" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="200" reduction="160" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="180" reduction="120" yieldPotential="0.9"/>
+            </fruitRequirement>
+
+            <fruitRequirement fruitTypeName="PEA" ignoreOverfertilization="true" alwaysAllowFertilization="true" availableAsDefaultRate="false">
+                <soil soilTypeIndex="1" targetLevel="0" reduction="0" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="0" reduction="0" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="0" reduction="0" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="0" reduction="0" yieldPotential="0.9"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="GREENBEAN">
+                <soil soilTypeIndex="1" targetLevel="100" reduction="90" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="110" reduction="100" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="130" reduction="90" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="120" reduction="100" yieldPotential="0.9"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="SPINACH">
+                <soil soilTypeIndex="1" targetLevel="150" reduction="140" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="160" reduction="140" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="170" reduction="150" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="160" reduction="150" yieldPotential="0.9"/>
+            </fruitRequirement>
+
+            <fruitRequirement fruitTypeName="RICE">
+                <soil soilTypeIndex="1" targetLevel="100" reduction="90" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="120" reduction="100" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="140" reduction="120" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="130" reduction="120" yieldPotential="0.9"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="RICELONGGRAIN">
+                <soil soilTypeIndex="1" targetLevel="100" reduction="90" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="120" reduction="100" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="140" reduction="120" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="130" reduction="120" yieldPotential="0.9"/>
+            </fruitRequirement>
+
+            <fruitRequirement fruitTypeName="GRAPE" ignoreOverfertilization="true">
+                <soil soilTypeIndex="1" targetLevel="70" reduction="65" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="80" reduction="70" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="90" reduction="80" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="75" reduction="60" yieldPotential="0.9"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="OLIVE" ignoreOverfertilization="true">
+                <soil soilTypeIndex="1" targetLevel="80" reduction="70" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="110" reduction="90" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="120" reduction="100" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="100" reduction="80" yieldPotential="0.9"/>
+            </fruitRequirement>
+
+            <!-- crops that don't need nitrogen application -->
+            <fruitRequirement fruitTypeName="OILSEEDRADISH" availableAsDefaultRate="false">
+                <soil soilTypeIndex="1" targetLevel="0" reduction="0" yieldPotential="0"/>
+                <soil soilTypeIndex="2" targetLevel="0" reduction="0" yieldPotential="0"/>
+                <soil soilTypeIndex="3" targetLevel="0" reduction="0" yieldPotential="0"/>
+                <soil soilTypeIndex="4" targetLevel="0" reduction="0" yieldPotential="0"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="DRYGRASS" availableAsDefaultRate="false">
+                <soil soilTypeIndex="1" targetLevel="0" reduction="0" yieldPotential="0"/>
+                <soil soilTypeIndex="2" targetLevel="0" reduction="0" yieldPotential="0"/>
+                <soil soilTypeIndex="3" targetLevel="0" reduction="0" yieldPotential="0"/>
+                <soil soilTypeIndex="4" targetLevel="0" reduction="0" yieldPotential="0"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="WEED" availableAsDefaultRate="false">
+                <soil soilTypeIndex="1" targetLevel="0" reduction="0" yieldPotential="0"/>
+                <soil soilTypeIndex="2" targetLevel="0" reduction="0" yieldPotential="0"/>
+                <soil soilTypeIndex="3" targetLevel="0" reduction="0" yieldPotential="0"/>
+                <soil soilTypeIndex="4" targetLevel="0" reduction="0" yieldPotential="0"/>
+            </fruitRequirement>
+
+            <!-- some common mod fruit types -->
+            <fruitRequirement fruitTypeName="alfalfa" alwaysAllowFertilization="true">
+                <soil soilTypeIndex="1" targetLevel="20" reduction="20" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="40" reduction="40" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="60" reduction="60" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="40" reduction="40" yieldPotential="0.9"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="clover" alwaysAllowFertilization="true">
+                <soil soilTypeIndex="1" targetLevel="40" reduction="40" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="60" reduction="60" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="80" reduction="80" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="40" reduction="40" yieldPotential="0.9"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="incarase_grass" alwaysAllowFertilization="true">
+                <soil soilTypeIndex="1" targetLevel="160" reduction="140" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="180" reduction="160" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="200" reduction="180" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="200" reduction="180" yieldPotential="0.9"/>
+            </fruitRequirement>
+        </fruitRequirements>
+
+        <!-- regular reference
+            total N target: 180 kg N/ha
+
+            mineral: 120 kg/ha
+            organic:  60 kg/ha
+        -->
+
+        <applicationRates>
+            <!-- fertilizer rates while no fruit type detected apply to planting wheat with additional application of manure (one time) -->
+            <applicationRate fillType="FERTILIZER" autoAdjustToFruit="true" regularRate="120">
+                <soil soilTypeIndex="1" rate="60"/> <!-- 60kg/ha -->
+                <soil soilTypeIndex="2" rate="80"/> <!-- 80kg/ha -->
+                <soil soilTypeIndex="3" rate="100"/> <!-- 100kg/ha -->
+                <soil soilTypeIndex="4" rate="80"/> <!-- 80kg/ha -->
+            </applicationRate>
+            <applicationRate fillType="LIQUIDFERTILIZER" autoAdjustToFruit="true" regularRate="120">
+                <soil soilTypeIndex="1" rate="60"/> <!-- 60kg/ha -->
+                <soil soilTypeIndex="2" rate="80"/> <!-- 80kg/ha -->
+                <soil soilTypeIndex="3" rate="100"/> <!-- 100kg/ha -->
+                <soil soilTypeIndex="4" rate="80"/> <!-- 80kg/ha -->
+            </applicationRate>
+
+            <!-- fixed organic values per soil type. After that adjust the N level by mineral fertilizer to reach the fruit requirements -->
+            <applicationRate fillType="LIQUIDMANURE" autoAdjustToFruit="false" regularRate="60">
+                <soil soilTypeIndex="1" rate="40"/> <!-- 40kg/ha -->
+                <soil soilTypeIndex="2" rate="60"/> <!-- 60kg/ha -->
+                <soil soilTypeIndex="3" rate="80"/> <!-- 80kg/ha -->
+                <soil soilTypeIndex="4" rate="60"/> <!-- 60kg/ha -->
+            </applicationRate>
+            <applicationRate fillType="DIGESTATE" autoAdjustToFruit="false" regularRate="60">
+                <soil soilTypeIndex="1" rate="40"/> <!-- 40kg/ha -->
+                <soil soilTypeIndex="2" rate="60"/> <!-- 60kg/ha -->
+                <soil soilTypeIndex="3" rate="80"/> <!-- 80kg/ha -->
+                <soil soilTypeIndex="4" rate="60"/> <!-- 60kg/ha -->
+            </applicationRate>
+            <applicationRate fillType="MANURE" autoAdjustToFruit="false" regularRate="60">
+                <soil soilTypeIndex="1" rate="40"/> <!-- 40kg/ha -->
+                <soil soilTypeIndex="2" rate="60"/> <!-- 60kg/ha -->
+                <soil soilTypeIndex="3" rate="80"/> <!-- 80kg/ha -->
+                <soil soilTypeIndex="4" rate="60"/> <!-- 60kg/ha -->
+            </applicationRate>
+
+            <!-- Custom FillTypes -->
+            <applicationRate fillType="COMPOST" autoAdjustToFruit="false" regularRate="60">
+                <soil soilTypeIndex="1" rate="40"/> <!-- 40kg/ha -->
+                <soil soilTypeIndex="2" rate="60"/> <!-- 60kg/ha -->
+                <soil soilTypeIndex="3" rate="80"/> <!-- 80kg/ha -->
+                <soil soilTypeIndex="4" rate="60"/> <!-- 60kg/ha -->
+            </applicationRate>
+        </applicationRates>
+
+        <fertilizerUsage>
+            <nAmount fillType="FERTILIZER" amount="0.27"/> <!-- Granular Calcium Ammonium Nitrate, 27% N -->
+            <nAmount fillType="LIQUIDFERTILIZER" amount="0.39"/> <!-- Mixture of Ammonium Nitrate and Urea, 39% N -->
+            <nAmount fillType="MANURE" amount="0.007"/> <!-- 7kg N / to (Cows: 6.1kg, Pigs: 7.6kg) -->
+            <nAmount fillType="LIQUIDMANURE" amount="0.004"/> <!-- 4kg N / m³ (Cows: 3.6kg, Pigs: 4.7kg)-->
+            <nAmount fillType="DIGESTATE" amount="0.0055"/> <!-- 5.5kg N / m³ (between 2.4 and 9.1 in real) -->
+
+            <!-- Custom FillTypes -->
+            <nAmount fillType="COMPOST" amount="0.007"/> <!-- 7kg N / -->
+        </fertilizerUsage>
+
+        <!-- Basegame Usages
+
+        Fertilizer:
+            - 217 l/ha
+            - 172 kg/ha
+            - 46,5 kg N/ha (27% Nitrogen)
+
+        Liquid Fertilizer:
+            - 291 l/ha
+            - 262 kg/ha
+            - 102 kg N/ha (39% Nitrogen)
+
+        Slurry:
+            - 14400 l/ha
+            - 57 kg N/ha (4kg/1m³)
+
+        Manure:
+            - 14400 l/ha
+            - 100 kg N/ha (7kg/1m³)
+
+        Digestate:
+            - 14400 l/ha
+            - 79.2 kg N/ha (5.5kg/1m³)
+
+        -->
+
+        <levelDifferenceColors>
+            <levelDifferenceColor levelDifference="0"   color="0.0000 0.4341 0.0802" colorBlind="1.0000 1.0000 0.1000" text="$l10n_fieldInfo_perfect"/>
+            <levelDifferenceColor levelDifference="20"  color="0.0331 0.4564 0.0513" colorBlind="0.9250 0.9250 0.1000" text="$l10n_fieldInfo_good"/>
+            <levelDifferenceColor levelDifference="40"  color="0.1329 0.4735 0.0296" colorBlind="0.8500 0.8500 0.1000" text="$l10n_fieldInfo_ok"/>
+            <levelDifferenceColor levelDifference="60"  color="0.3231 0.4969 0.0137" colorBlind="0.7500 0.7500 0.1000" text="$l10n_fieldInfo_bad" showWarning="true"/>
+            <levelDifferenceColor levelDifference="80"  color="0.9910 0.3231 0.0000" colorBlind="0.4500 0.4500 0.1000" text="$l10n_fieldInfo_bad" showWarning="true"/>
+            <levelDifferenceColor levelDifference="100" color="0.9910 0.0000 0.0000" colorBlind="0.1000 0.1000 0.1000" text="$l10n_fieldInfo_bad" showWarning="true"/>
+        </levelDifferenceColors>
+    </nitrogenMap>
+
+    <seedRateMap>
+        <rateValues>
+            <rateValue value="1" text="$l10n_ui_seedRate_low" color="0.1683 0.4793 0.3050" colorBlind="0.0061 0.0061 0.0130"/>
+            <rateValue value="2" text="$l10n_ui_seedRate_medium" color="0.9301 0.7304 0.4179" colorBlind="0.6172 0.6172 0.0263"/>
+            <rateValue value="3" text="$l10n_ui_seedRate_high" color="0.6105 0.0578 0.0409" colorBlind="0.0578 0.0578 0.2383"/>
+        </rateValues>
+
+        <fruitTypes>
+            <fruitType name="WHEAT">
+                <seedRates rates="180 300 420" usages="0.01848 0.0308 0.04312"/>
+
+                <soilTypes>
+                    <soilType index="1" yields="0.875 1.000 1.125"/>
+                    <soilType index="2" yields="0.950 1.000 1.000"/>
+                    <soilType index="3" yields="1.000 1.000 1.000"/>
+                    <soilType index="4" yields="0.777 1.000 1.111"/>
+                </soilTypes>
+            </fruitType>
+            <fruitType name="BARLEY">
+                <seedRates rates="160 220 280" usages="0.0192 0.0265 0.0337"/>
+
+                <soilTypes>
+                    <soilType index="1" yields="0.875 1.000 1.125"/>
+                    <soilType index="2" yields="0.950 1.000 1.000"/>
+                    <soilType index="3" yields="1.000 1.000 1.000"/>
+                    <soilType index="4" yields="0.777 1.000 1.111"/>
+                </soilTypes>
+            </fruitType>
+            <fruitType name="OAT">
+                <seedRates rates="160 220 280" usages="0.0247 0.034 0.0432"/>
+
+                <soilTypes>
+                    <soilType index="1" yields="0.875 1.000 1.125"/>
+                    <soilType index="2" yields="0.950 1.000 1.000"/>
+                    <soilType index="3" yields="1.000 1.000 1.000"/>
+                    <soilType index="4" yields="0.777 1.000 1.111"/>
+                </soilTypes>
+            </fruitType>
+            <fruitType name="CANOLA">
+                <seedRates rates="35 52 70" usages="0.003298 0.0049 0.00659"/>
+
+                <soilTypes>
+                    <soilType index="1" yields="0.875 1.000 0.937"/>
+                    <soilType index="2" yields="0.900 1.000 0.950"/>
+                    <soilType index="3" yields="1.000 0.960 0.920"/>
+                    <soilType index="4" yields="0.777 1.000 0.888"/>
+                </soilTypes>
+            </fruitType>
+            <fruitType name="MAIZE">
+                <seedRates rates="8 10 12" usages="0.00424 0.0053 0.00636"/>
+
+                <soilTypes>
+                    <soilType index="1" yields="0.875 1.000 1.125"/>
+                    <soilType index="2" yields="0.950 1.000 1.000"/>
+                    <soilType index="3" yields="1.000 1.000 1.000"/>
+                    <soilType index="4" yields="0.777 1.000 1.111"/>
+                </soilTypes>
+            </fruitType>
+            <fruitType name="SUNFLOWER">
+                <seedRates rates="10 12 14" usages="0.0119 0.0143 0.01668"/>
+
+                <soilTypes>
+                    <soilType index="1" yields="0.875 1.000 1.125"/>
+                    <soilType index="2" yields="0.950 1.000 1.000"/>
+                    <soilType index="3" yields="1.000 1.000 1.000"/>
+                    <soilType index="4" yields="0.777 1.000 1.111"/>
+                </soilTypes>
+            </fruitType>
+            <fruitType name="SOYBEAN">
+                <seedRates rates="30 35 40" usages="0.0183 0.0214 0.02446"/>
+
+                <soilTypes>
+                    <soilType index="1" yields="0.875 1.000 1.125"/>
+                    <soilType index="2" yields="0.950 1.000 1.000"/>
+                    <soilType index="3" yields="1.000 1.000 1.000"/>
+                    <soilType index="4" yields="0.777 1.000 1.111"/>
+                </soilTypes>
+            </fruitType>
+            <fruitType name="SUGARBEET">
+                <seedRates rates="8 9 10" usages="0.03022 0.0034 0.003777"/>
+
+                <soilTypes>
+                    <soilType index="1" yields="0.875 1.000 1.125"/>
+                    <soilType index="2" yields="0.950 1.000 1.000"/>
+                    <soilType index="3" yields="1.000 1.000 1.000"/>
+                    <soilType index="4" yields="0.777 1.000 1.111"/>
+                </soilTypes>
+            </fruitType>
+            <fruitType name="SORGHUM">
+                <seedRates rates="10 12 14" usages="0.002916 0.0035 0.00408"/>
+
+                <soilTypes>
+                    <soilType index="1" yields="0.875 1.000 1.125"/>
+                    <soilType index="2" yields="0.950 1.000 1.000"/>
+                    <soilType index="3" yields="1.000 1.000 1.000"/>
+                    <soilType index="4" yields="0.777 1.000 1.111"/>
+                </soilTypes>
+            </fruitType>
+            <fruitType name="CARROT">
+                <seedRates rates="150 175 200" usages="0.00085 0.001 0.00115"/>
+
+                <soilTypes>
+                    <soilType index="1" yields="0.875 1.000 1.125"/>
+                    <soilType index="2" yields="0.950 1.000 1.000"/>
+                    <soilType index="3" yields="1.000 1.000 1.000"/>
+                    <soilType index="4" yields="0.777 1.000 1.111"/>
+                </soilTypes>
+            </fruitType>
+            <fruitType name="BEETROOT">
+                <seedRates rates="40 50 70" usages="0.0035 0.004 0.0044"/>
+
+                <soilTypes>
+                    <soilType index="1" yields="0.875 1.000 1.125"/>
+                    <soilType index="2" yields="0.950 1.000 1.000"/>
+                    <soilType index="3" yields="1.000 1.000 1.000"/>
+                    <soilType index="4" yields="0.777 1.000 1.111"/>
+                </soilTypes>
+            </fruitType>
+            <fruitType name="PARSNIP">
+                <seedRates rates="35 40 45" usages="0.00085 0.001 0.00115"/>
+
+                <soilTypes>
+                    <soilType index="1" yields="0.875 1.000 1.125"/>
+                    <soilType index="2" yields="0.950 1.000 1.000"/>
+                    <soilType index="3" yields="1.000 1.000 1.000"/>
+                    <soilType index="4" yields="0.777 1.000 1.111"/>
+                </soilTypes>
+            </fruitType>
+            <fruitType name="PEA">
+                <seedRates rates="80 90 100" usages="0.02 0.025 0.03"/>
+
+                <soilTypes>
+                    <soilType index="1" yields="0.875 1.000 1.125"/>
+                    <soilType index="2" yields="0.950 1.000 1.000"/>
+                    <soilType index="3" yields="1.000 1.000 1.000"/>
+                    <soilType index="4" yields="0.777 1.000 1.111"/>
+                </soilTypes>
+            </fruitType>
+            <fruitType name="GREENBEAN">
+                <seedRates rates="25 30 35" usages="0.024 0.028 0.032"/>
+
+                <soilTypes>
+                    <soilType index="1" yields="0.875 1.000 1.125"/>
+                    <soilType index="2" yields="0.950 1.000 1.000"/>
+                    <soilType index="3" yields="1.000 1.000 1.000"/>
+                    <soilType index="4" yields="0.777 1.000 1.111"/>
+                </soilTypes>
+            </fruitType>
+            <fruitType name="SPINACH">
+                <seedRates rates="80 100 120" usages="0.00085 0.001 0.00115"/>
+
+                <soilTypes>
+                    <soilType index="1" yields="0.875 1.000 1.125"/>
+                    <soilType index="2" yields="0.950 1.000 1.000"/>
+                    <soilType index="3" yields="1.000 1.000 1.000"/>
+                    <soilType index="4" yields="0.777 1.000 1.111"/>
+                </soilTypes>
+            </fruitType>
+            <fruitType name="RICELONGGRAIN">
+                <seedRates rates="400 450 500" usages="0.04 0.05 0.06"/>
+
+                <soilTypes>
+                    <soilType index="1" yields="0.875 1.000 1.125"/>
+                    <soilType index="2" yields="0.950 1.000 1.000"/>
+                    <soilType index="3" yields="1.000 1.000 1.000"/>
+                    <soilType index="4" yields="0.777 1.000 1.111"/>
+                </soilTypes>
+            </fruitType>
+            <fruitType name="OILSEEDRADISH">
+                <seedRates rates="150 175 200" usages="0.003 0.004 0.005"/>
+
+                <soilTypes>
+                    <soilType index="1" yields="1.000 1.000 1.000"/>
+                    <soilType index="2" yields="1.000 1.000 1.000"/>
+                    <soilType index="3" yields="1.000 1.000 1.000"/>
+                    <soilType index="4" yields="1.000 1.000 1.000"/>
+                </soilTypes>
+            </fruitType>
+        </fruitTypes>
+    </seedRateMap>
+
+    <tramlineMap>
+        <bitVectorMap sizeX="4096" sizeY="4096" />
+        <npcFields fruitTypes="wheat barley canola oat soybean sorghum riceLongGrain pea greenbean spinach" workingWidth="27" />
+    </tramlineMap>
+
+    <subsidies>
+        <coverCropBonus>
+            <fruitType name="OILSEEDRADISH" bonusPerHa="200 150 100" />
+        </coverCropBonus>
+    </subsidies>
+
+    <environmentalScore>
+        <scoreValues>
+            <scoreValue id="NITROGEN"      name="$l10n_environmentalScore_nitrogen"     maxScore="30" className="EnvironmentalScoreNitrogen">
+                <scoreMapping>
+                    <scoreValue nOffset="-50"   score="0"/>
+                    <scoreValue nOffset="-5"    score="1"/>
+                    <scoreValue nOffset="0"     score="1"/>
+                    <scoreValue nOffset="5"     score="0.66"/>
+                    <scoreValue nOffset="10"    score="0.33"/>
+                    <scoreValue nOffset="15"    score="0"/>
+                </scoreMapping>
+            </scoreValue>
+            <scoreValue id="LIME"          name="$l10n_environmentalScore_lime"         maxScore="15" className="EnvironmentalScorePH">
+                <scoreMapping>
+                    <scoreValue phOffset="-1.000"  score="0"/> <!-- after 8 harvests -->
+                    <scoreValue phOffset="-0.500"  score="1"/> <!-- after 4 harvests -->
+                    <scoreValue phOffset="0.000"   score="1"/>
+                    <scoreValue phOffset="0.250"   score="0"/>
+                </scoreMapping>
+            </scoreValue>
+            <scoreValue id="HERBICIDE"     name="$l10n_environmentalScore_herbicide"    maxScore="30" className="EnvironmentalScoreHerbicide"/>
+            <scoreValue id="SOIL_SAMPLING" name="$l10n_environmentalScore_soilSampling" maxScore="15" className="EnvironmentalScoreSoilSample"/>
+            <scoreValue id="TILLAGE"       name="$l10n_environmentalScore_tillage"      maxScore="10" className="EnvironmentalScoreTillage"/>
+        </scoreValues>
+    </environmentalScore>
+</precisionFarming>

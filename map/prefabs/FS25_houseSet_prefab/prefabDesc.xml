@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<prefabDesc descVersion="1">
+    <author>[DMI]20mmNormandy</author>
+    <version>1.0.0.0</version>
+	
+	<title>
+        <en>House Prefab Pack</en>
+        <de>Haus Prefab Paket</de>
+    </title>
+    <description>
+        <en>
+<![CDATA[
+With this house pack you can decorate your map
+
+This is prefab!
+]]>
+        </en>
+        <de>
+<![CDATA[Mit diesem Hauspaket können Sie Ihre Karte dekorieren
+
+Das ist vorgefertigt!
+]]>
+        </de>
+    </description>
+	
+	<categories>
+        <category>Static</category>
+    </categories>
+	
+	<iconFilename>icon_housePack.dds</iconFilename>
+	
+</prefabDesc>
