@@ -7,12 +7,12 @@
         "ceiling": 0,
         "water_depth": 2,
         "blur_radius": 35,
-        "add_foundations": false
+        "add_foundations": true
     },
     "BackgroundSettings": {
         "generate_background": true,
         "generate_water": true,
-        "water_blurriness": 0,
+        "water_blurriness": 20,
         "remove_center": true
     },
     "GRLESettings": {
@@ -21,21 +21,22 @@
         "base_price": 60000,
         "price_scale": 100,
         "add_grass": true,
-        "base_grass": "meadow",
-        "random_plants": false,
-        "fill_empty_farmlands": false
+        "base_grass": "smallDenseMix",
+        "random_plants": true,
+        "fill_empty_farmlands": true
     },
     "I3DSettings": {
         "add_trees": true,
         "forest_density": 10,
+        "tree_limit": 0,
         "trees_relative_shift": 20,
         "spline_density": 2,
         "add_reversed_splines": false,
         "field_splines": true
     },
     "TextureSettings": {
-        "dissolve": false,
-        "fields_padding": 1,
+        "dissolve": true,
+        "fields_padding": 4,
         "skip_drains": false,
         "use_cache": false,
         "use_precise_tags": false

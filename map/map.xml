@@ -20,7 +20,7 @@
         
     </guidedTours>
 
-    <sounds filename="$data/maps/mapUS/sounds/sounds.xml" />
+    <sounds filename="map/config/sounds.xml" />
     <environment filename="map/config/environment.xml" />
     <weed filename="map/config/weed.xml" />
     <fieldGround filename="map/config/fieldGround.xml" />

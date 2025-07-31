@@ -87,15 +87,29 @@
                 "name": "elevated_water",
                 "x_size": 8184.0,
                 "y_size": 8016.0,
-                "z_size": 96.284,
-                "x_center": 3444.8232,
-                "y_center": -4058.8823,
-                "z_center": -47.2098
+                "z_size": 95.2179,
+                "x_center": 3445.8805,
+                "y_center": -4061.3699,
+                "z_center": -46.7397
             }
         ]
     },
     "GRLE": {},
-    "I3d": {},
+    "I3d": {
+        "Forests": {
+            "available_tree_count": 1059569,
+            "step_by_limit": 1,
+            "tree_count": 105957,
+            "tree_limit": 0,
+            "initial_step": 10,
+            "actual_step": 10
+        },
+        "Fields": {
+            "added_fields": 216,
+            "skipped_fields": 2,
+            "skipped_field_ids": []
+        }
+    },
     "Config": {
         "Overview": {
             "epsg3857_string": "1517642.0733140623,1532244.8076437297,7517785.772636008,7532388.512338427 [EPSG:3857]",
@@ -106,6 +120,10 @@
             "east": 13.633210702808615,
             "height": 8192,
             "width": 8192
+        },
+        "Fog": {
+            "minimum_height": 9,
+            "maximum_height": 95
         }
     },
     "Satellite": {}
